@@ -19,7 +19,10 @@ def won?(board)
   win_comb = []
   check = 0
     WIN_COMBINATIONS.each do |comb|
-    if board(comb[0]) == board(comb[1]) && board(comb[0]) == board(comb[2]) && board(comb[1]) == board(comb[2])
+      comb1 = comb[0]
+      comb2 = comb[1]
+      comb3 = comb[2]
+    if board(comb1) == board(comb2) && board(comb1) == board(comb3) && board(comb2) == board(comb3)
       win_comb = comb
       check = 1
     end
