@@ -16,12 +16,19 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  win_comb = []
+  check = 0
     WIN_COMBINATIONS.each do |comb|
     if comb[0] == comb[1] && comb[0] == comb[2]
-      return comb
+      win_comb = comb
+      check = 1
     end
   end
-  return false
+  if check == 1
+    return win_comb
+  else
+    return false
+  end
 end
 
 def full?(board)
