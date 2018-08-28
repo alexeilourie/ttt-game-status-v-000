@@ -62,6 +62,6 @@ def winner(board)
   else
     a = []
     a = won?(board)
-    return a[0]
+    return board(a[0])
   end
 end
