@@ -19,7 +19,7 @@ def won?(board)
     WIN_COMBINATIONS.each do |comb|
     if comb[0] == comb[1] && comb[0] == comb[2]
       return comb
-    end 
+    end
   end
   return false
 end
@@ -31,4 +31,12 @@ def full?(board)
     end
   end
   return true
+end
+
+def draw?(board)
+  if full?(board) && !won?(board)
+    return true
+  else
+    return false
+  end
 end
