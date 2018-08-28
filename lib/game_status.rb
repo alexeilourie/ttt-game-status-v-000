@@ -22,7 +22,7 @@ def won?(board)
       comb1 = comb[0]
       comb2 = comb[1]
       comb3 = comb[2]
-    if board[comb1] == board[comb2] && board[comb1] == board[comb3] && board[comb2] == boar[(comb3]
+    if board[comb1] == board[comb2] && board[comb1] == board[comb3] && board[comb2] == board[comb3]
       win_comb = comb
       check = 1
     end
